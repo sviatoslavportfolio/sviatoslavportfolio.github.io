@@ -1,0 +1,344 @@
+body{
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    font-family: 'Ubuntu', sans-serif;
+}
+p{
+    font-size:14px;
+    
+}
+.w75p{
+    width: 75%;
+}
+/*header*/
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+.navbar{
+    background: #648cff;
+    padding-top: 10px;
+}
+.navbar a#logo{
+    color:#fff;
+    font-weight: bold;
+    font-size:24px;
+}
+.navbar-default .navbar-nav>li>a{
+    color:#fff;
+    font-size:18px;
+}
+
+#navigation-social li a{
+    padding-left: 10px;
+     padding-right: 10px;
+}
+.navbar{
+ margin-bottom: 0;
+    border:none;
+ 
+}
+header{
+   
+    background: #648cff url(../img/wave.png) no-repeat 0px 350px;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.main-header h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:bold;
+    padding-top: 200px;
+}
+.main-header p{
+    color:#fff;
+    font-size:18px;
+}
+.main-header button{
+    padding: 15px 0px;
+    height: 52px;
+
+    border:none;
+    border-radius: 6px;
+}
+.main-header button a{
+    padding: 0 30px;
+    margin: 0;
+    line-height: 51px;
+    display: block;
+    font-size:18px;
+    color:#fff;
+    margin-top: -15px;
+    display: block;
+    text-decoration: none;
+    outline: none;
+    border-radius: 6px;
+}
+.main-header #btn_1{
+    background: #fc6a42;
+}
+.main-header #btn_2{
+    background: #4466c9;
+}
+.main-header #btn_1:hover{
+    background: #53c766;
+}
+.main-header #btn_2:hover{
+    background: #53c766;
+}
+
+.header-right-side-img
+{
+    padding: 80px 0 10px 0;
+}
+header{
+    border-bottom-left-radius:50% 60px;
+    border-bottom-right-radius:50% 60px;
+}
+.left-side p{
+       padding-right: 60px;
+    }
+.navbar-toggle{
+    background: #fff;
+}
+.navbar-collapse{
+    border: none;
+}
+.scroll-down{
+    
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+   
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+    background: url('../img/scroll-down.png') no-repeat;
+    animation: scroll-page-down 0.6s linear infinite alternate;
+    
+    
+}
+/*main*/
+main h2{
+    font-size: 36px;
+    margin-top: 100px;
+    text-align: center;
+    color:#648cff;
+    font-weight: bold;
+}
+main h3{
+    font-size: 24px;
+    font-weight: bold;
+    color:#353854;
+}
+main h5{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 60px;
+    color:#999999;
+    padding-top: 10px;
+}
+main p{
+    color:#aeaeae;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.necessary-item img{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*slider*/
+.slider-block{
+  height: 670px;
+}
+/*slider end*/
+/*screenshots*/
+.screenshots-item{
+    margin: 100px 0;
+}
+.screenshots-item h1{
+   
+     color:#000;
+    font-size:60px;
+    font-weight:bold;
+   
+}
+
+.screenshots-item .weather-icon{
+     padding-top: 120px;
+}
+/*reviews*/
+.reviews-item{
+    
+    margin:50px 0px;
+}
+.reviews-item p{
+    font-size: 24px;
+    padding:10px 10px 20px 0;
+    color:#353854;
+}
+.reviews-item h6{
+    font-size: 18px;
+    
+    color:#353854;
+}
+/*download*/
+.download-block{
+    height: 460px;
+   
+}
+#download-phone{
+    background: #648cff url('../img/download-phone.png') no-repeat 85% -40%;
+    height: 460px;
+}
+.download-item h2{
+    font-size: 36px;
+    color:#fff;
+    text-align: left;
+    padding-top: 0px;
+    padding-bottom: 70px;
+    font-weight: bold;
+}
+.download-item p{
+    font-size: 18px;
+    color:#fff;
+    padding-right: 150px;
+    font-weight: normal;
+    padding-bottom: 50px;
+}
+.social-btn-1{
+    width: 139px;
+    height: 45px;
+    background: url('../img/appstore.png');
+    border: none;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+.social-btn-2{
+    width: 139px;
+    height: 45px;
+    background: url('../img/google-play.png');
+    border: none;
+    border-radius: 8px;
+}
+/*footer*/
+footer{
+    background: #353854;
+}
+footer ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+    
+    
+}
+footer h1{
+    line-height: 200px;
+    margin: 0;
+}
+footer li{
+    line-height: 200px;
+}
+footer h1{
+    line-height: 200px;
+}
+
+.footer-menu li a{
+    color:#fff;
+    
+}
+.footer-menu li a:hover{
+    text-decoration: underline;
+    
+}
+footer h1{
+    color:#648cff;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+footer h1 span{
+    color:#fc6a42;
+}
+.footer-top{
+    border-bottom: 1px solid #434769;
+    height: 200px;
+}
+.footer-top a{
+    text-decoration: none;
+    outline: none;
+     color:#648cff;
+}
+.footer-top a:hover{
+    color:#648cff;
+}
+.border-bottom{
+    height: 1px;
+    background: #434769;
+}
+.footer-bottom p{
+    padding: 40px 0;
+    color:#4a4e74;
+    
+}
+.up-page{
+    position: absolute;
+    left:85%;
+   margin-top: 85px;
+    width: 35px;
+    height: 35px;
+    background:#434769 url("../img/up-arrow-footer.png") no-repeat 50%;
+    border:none;
+    z-index: 9999;
+}
+/*animation*/
+@keyframes scroll-page-down{
+    0%{
+        transform:translateY(6px);
+    }
+    100%{
+        transform:translateY(-6px);
+    }
+    
+}
+
+/*slid*/
+#carousel .cloud9-item, #buttons button {
+  cursor: pointer;
+}
+
+    #showcase {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        
+      height: 670px;
+
+    }
+.noselect.right,.noselect.left{
+    display: flex;
+    height: 50px;
+    background: url(../img/r.png) no-repeat 50% 50%;
+    border:none;
+    top: 50%;
+    outline: none;
+}
+.noselect.left{
+    transform: rotate(180deg);
+}
+.wrap{
+    padding: 0;
+    margin: 0;
+   /* width: 700px;*/
+    left: 0;
+  right: 0;
+  margin: 0px auto; 
+}

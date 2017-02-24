@@ -1,0 +1,188 @@
+/*========== Desktop First Method ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    .header-nav li {
+        padding-left: 10px;
+    }
+    .treasures-block h2 {
+        font-size: 50px;
+    }
+    .about h2 {
+        font-size: 50px;
+    }
+    .about .about-item span {
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        font-size: 50px;
+    }
+    .about .about-item h4 {
+        font-size: 20px;
+    }
+    .water h2{
+        font-size: 50px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width:992px) {
+    .header-nav li a {
+        font-size: 17px;
+    }
+    .treasures-fill button {
+        padding: 10px 20px;
+    }
+    .about .about-item span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        font-size: 40px;
+    }
+    
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {
+    .brand {
+        left: 0;
+        right: 0;
+        width: 370px;
+        margin: 0 auto;
+        top: 100px;
+    }
+    .header-nav li {
+        display: block;
+        background: #fff;
+        padding: 15px 30px;
+    }
+    .header-nav li a {
+        color: #777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    .header-nav {
+        position: absolute;
+        left: 0;
+        top: 59px;
+        width: 270px;
+        height: 100%;
+        z-index: 8;
+        transition: 0.5s;
+        padding: 0;
+    }
+    .header-nav li:nth-child(1) {
+        background: #fa5d07;
+    }
+    .header-nav li:hover {
+        background: #fa5d07;
+    }
+    .header-nav li:hover a {
+        color: #fff;
+    }
+    .header-nav li:nth-child(1) a {
+        color: #fff!important;
+    }
+    .transform270 {
+        transform: translateX(-270px);
+    }
+    .header-nav {
+        position: fixed;
+        top: 60px;
+    }
+    .mobile-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        height: 60px;
+        width: 100%;
+        background: #fff;
+        z-index: 3;
+    }
+    .mobile-menu-btn {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        transition: all 0.3s linear;
+    }
+    .transform180 {
+        transition: all 0.3s linear;
+        transform: rotate(180deg);
+    }
+    .mobile-header p {
+        margin-left: 50px;
+        font-size: 24px;
+        line-height: 60px;
+    }
+    .mobile-menu-btn span {
+        display: block;
+        height: 4px;
+        margin: 2px 0;
+        width: 25px;
+        background: #000;
+        border-radius: 3px;
+        transition: all 0.3s linear;
+    }
+    .line1trans {
+        transform: translateX(6px) rotate(45deg) scale(0.6);
+    }
+    .line3trans {
+        transform: translateX(6px) rotate(-45deg) scale(0.6);
+    }
+    .treasures-block {
+        margin-top: -20px;
+    }
+    .treasures-block h2 {
+        font-size: 40px;
+    }
+    .treasures-fill p {
+        padding: 10px 0;
+    }
+    .treasures-fill button {
+        padding: 10px 20px;
+    }
+    .treasures-block {
+        padding-top: 10px;
+    }
+    .slider-block img {
+        min-height: 320px;
+    }
+    .events-bottom-line{
+        margin-top: -100px;
+    }
+    .water h2{
+        font-size: 46px;
+        line-height: 50px;
+    
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 501px) {
+    .treasures-block h2 {
+        font-size: 24px;
+    }
+    .treasures-fill button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .treasures-fill p {
+        font-size: 14px;
+    }
+    .brand {
+        width: 300px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 380px) {}

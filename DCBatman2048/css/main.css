@@ -1,0 +1,252 @@
+body{
+	font-family: "RalewayRegular", sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+    
+}
+.p0{
+    padding: 0;
+}
+/*button*/
+.call_btn2{
+ 
+    display: none;
+    position: fixed;
+    top: 8px;
+    right: 65px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color:#fff;
+    z-index: 999;
+    background-color: #ff0000;
+    border:none;
+    outline : none; 
+}
+.call_btn2 span{
+top: -9px;   
+}
+.my_btn{
+    background-color: #e84545;
+    border: none;
+    text-transform: uppercase;
+    color:#fff;
+    outline: none;
+}
+.btn_md{
+    padding: 10px 30px;
+}
+.btn_lg{
+    padding: 15px 30px;
+}
+/*HEADER*/
+header{
+    height: 580px;
+    background-image: url(../img/banner.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+}
+nav{
+    height: 94px;
+    line-height: 94px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li{
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.menu li a{
+    color:#fff;
+    text-transform: uppercase;
+    font-family: 'RalewayBold', sans-serif;
+    text-decoration: none;
+}
+.menu li a:focus{
+   color:#fff; 
+}
+.top_line{
+    height: 1px;
+background-color: #e1e1e1;
+}
+.logo{
+    padding-top: 35px;
+}
+.title_block{
+    color:#fff;
+    text-align: center;
+    margin-top: 200px;  
+}
+.title_block h1{
+    font-size: 40px;
+   font-family: 'RalewayBold', sans-serif;
+}
+.title_block p{
+    font-size: 20px;
+margin-bottom: 50px;
+}
+
+/*PARAMETRS SECTION*/
+.params_s{
+    padding: 95px 0;
+}
+.param_block{
+    text-align: center;
+margin-bottom: 50px;
+}
+.param_block i {
+    font-size: 70px;
+    color: #e84545;
+}
+.param_block h3 {
+    text-transform: uppercase;
+    font-family: "RalewayBold", sans-serif;
+    font-size: 18px;
+}
+.param_block p{
+    font-size: 14px; 
+}
+
+/*works*/
+.work_block{
+    position: relative;
+}
+.work_block img{
+    width: 100%;
+}
+.image_wrap{
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(232,69,69,.7);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    color:#fff;
+    opacity: 0;
+}
+.work_descr{
+    margin: auto;
+text-align: center;
+}
+.work_block:hover .image_wrap{
+    opacity: 1;
+    transition: all 0.7s;
+}
+
+/*team*/
+.team_s{
+    padding: 95px 0;
+    color:#6c7279;
+}
+.team_item h4{
+   font-family: 'RalewayBold', sans-serif;
+    color:#000;
+    padding-top: 5px;
+}
+.team_item>span p{
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#e84545;
+}
+.team_item>p{
+    font-size: 14px;
+    padding: 5px 0;
+}
+.soc_btn{
+    border:1px solid #c6cacc;
+    color:#c6cacc;
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    outline : none; 
+}
+.soc_btn:hover{
+    color:#476aa3;
+}
+.call_btn{
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color:#fff;
+    z-index: 999;
+    background-color: #ff0000;
+    border:none;
+    outline : none; 
+}
+/*download*/
+.download_block{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.download_block h5{
+    font-size: 28px;
+}
+.download_block p{
+    font-family: 'RalewayBold', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+/*footer*/
+.main_footer{
+    padding: 50px 0;
+    background-color: #3a3e64;
+}
+.footer_item{
+    text-align: center;
+    
+}
+.footer_item i{
+    color:#fff;
+}
+.footer_item>.soc_btn:hover, .footer_item>.soc_btn:hover i{
+    color:#98bdf9;
+    border-color:#98bdf9;
+}
+.footer_item h5{
+    color:#fff;
+    font-family: 'RalewayBold', sans-serif;
+    text-transform: uppercase;
+}
+
+
+.footer_item p{
+    font-size: 14px;
+    color:#9d9fb2;
+}
+.copyright_block{
+    background-color: #313454;
+    text-align: center;
+    padding: 15px 0;
+}
+.copy_text{
+    color:#9d9fb2;
+}
+/*MODAL*/
+.modal-content{
+    border-radius: 8px;
+}
+#myForm input{
+    margin-bottom: 10px;
+}
+#myForm {
+    width: 70%;
+    margin: 0 auto;
+}

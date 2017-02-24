@@ -1,0 +1,234 @@
+/*========== Desktop First Method ==========*/
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (max-width: 1200px) {
+    header {
+        height: 550px;
+    }
+    main {
+        padding-top: 550px;
+    }
+    .header-main h1 {
+        margin-top: -50px;
+    }
+    .navbar-default {
+        background-color: #fff;
+    }
+    .header-main h1 small {
+        font-size: 16px;
+    }
+    .header-main h1 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+    .header-main p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+    .navbar-nav>li>a {
+        padding: 0 10px;
+    }
+    .progress {
+        width: 410px;
+    }
+    .social h1 {
+        font-size: 45px;
+    }
+}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (max-width:992px) {
+    .navbar-brand {
+        width: 100%;
+    }
+    .navbar-header {
+        float: none;
+        text-align: center;
+    }
+    .navbar-default {
+        height: 130px;
+    }
+    .navbar-right {
+        position: absolute;
+        top: 0px;
+        right: 5%;
+    }
+    .header-main h1 {
+        margin-top: -10px;
+    }
+    .features-block {
+        text-align: center;
+    }
+    .left-progress-block p {
+        width: 100%;
+        text-align: center;
+    }
+    .progress-block h3 {
+        text-align: center;
+        font-size: 28px;
+    }
+    .progress {
+        width: 92%;
+    }
+    .number-block:nth-child(3) {
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .blog-post {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    .blog-post .read-more {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+    .blog-post img {
+        margin: 0 auto;
+    }
+    .slider-section h2{
+        font-size: 35px;
+    }
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (max-width: 767px) {
+    /*Disable Animation on Mobile Devices*/
+    /*.animated { 
+
+-o-transition-property: none !important; 
+-moz-transition-property: none !important; 
+-ms-transition-property: none !important; 
+-webkit-transition-property: none !important; 
+transition-property: none !important; 
+
+-o-transform: none !important; 
+-moz-transform: none !important; 
+-ms-transform: none !important; 
+-webkit-transform: none !important; 
+transform: none !important; 
+
+-webkit-animation: none !important; 
+-moz-animation: none !important; 
+-o-animation: none !important; 
+-ms-animation: none !important; 
+animation: none !important; 
+} */
+    .navbar-default {
+        height: 55px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    .navbar-brand {
+        width: 0;
+        display: inline-block;
+        line-height: 55px;
+    }
+    .navbar-brand h1 {
+        line-height: 55px;
+    }
+    .navbar-toggle {
+        float: left;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+    header {
+        height: 450px;
+    }
+    main {
+        padding-top: 450px;
+    }
+    .header-main h1 {
+        margin-top: -100px;
+        margin-bottom: 40px;
+    }
+    .header-main button {
+        width: 320px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .navbar-brand h1 {
+        font-size: 22px;
+    }
+    .progress {
+        width: 92%;
+    }
+    .number-block {
+        width: 50%;
+        border: none !important;
+    }
+    .number-block:nth-child(4),
+    .number-block:nth-child(2) {
+        border-left: 1px solid rgba(255, 255, 255, 0.1)!important;
+    }
+    .subscribe input {
+        width: 100%;
+    }
+    .subscribe button {
+        margin-top: 50px;
+    }
+    .theme h2{
+        padding-top: 20px;
+        font-size: 35px;
+    }
+}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (max-width: 480px) {
+    .progress {
+        width: 88%;
+    }
+    .number-block,
+    .number-block:nth-child(4),
+    .number-block:nth-child(2) {
+        width: 100%;
+        border: none !important;
+    }
+    .slider-section .slider-descr{
+        font-size: 16px;
+    }
+}
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {}
+
+
+/*========== Mobile First Method ==========*/
+
+
+/* Custom, iPhone Retina */
+
+@media only screen and (min-width: 320px) {}
+
+
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width: 768px) {}
+
+
+/* Medium Devices, Desktops */
+
+@media only screen and (min-width: 992px) {}
+
+
+/* Large Devices, Wide Screens */
+
+@media only screen and (min-width: 1200px) {}

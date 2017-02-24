@@ -1,0 +1,191 @@
+/*========== Desktop First Method ==========*/ 
+
+/* Large Devices, Wide Screens */ 
+@media only screen and (max-width : 1200px) { 
+
+} 
+
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width : 992px) { 
+    
+    
+.review_text p{
+    font-size: 20px;
+    
+}
+        .review_text{
+        margin-top: 15px;
+    }
+    .review_block{
+        padding-top: 50px;
+    }
+    .social img{
+    width: 70%;
+}
+    h2{
+        padding-bottom: 10px;
+    }
+    .main{
+        padding: 0 15px;
+    }
+    .contact_feedback input[type=submit]{
+        margin:0 auto;
+        display:block;
+    }
+    .contact_feedback ul{
+    list-style: none;
+    position: relative;
+    float: left;
+    display: block;
+    left: 50%; 
+    margin: 0;
+    padding: 25px 0;
+    }
+     .contact_feedback li{
+         position: relative;
+         float: left;
+         display: block;
+         right: 50%;
+    }
+    .contact_feedback h3,.contact_feedback p{
+        text-align: center;
+        padding-bottom: 0 0 25px 0;
+    }
+    .contact_feedback{
+    padding-top: 20px;
+}
+} 
+
+/* Small Devices, Tablets */ 
+@media only screen and (max-width : 767px) { 
+
+/*Disable Animation on Mobile Devices*/ 
+.animated { 
+/*CSS transitions*/ 
+-o-transition-property: none !important; 
+-moz-transition-property: none !important; 
+-ms-transition-property: none !important; 
+-webkit-transition-property: none !important; 
+transition-property: none !important; 
+/*CSS transforms*/ 
+-o-transform: none !important; 
+-moz-transform: none !important; 
+-ms-transform: none !important; 
+-webkit-transform: none !important; 
+transform: none !important; 
+/*CSS animations*/ 
+-webkit-animation: none !important; 
+-moz-animation: none !important; 
+-o-animation: none !important; 
+-ms-animation: none !important; 
+animation: none !important; 
+} 
+
+    .social img{
+    width: 60%;
+}
+    .h220{
+        height: 240px;
+    }
+    .advantages p{
+        text-align: center;
+        padding: 0 30px;
+    }
+    nav{
+        height: 60px;
+       background: #fff;
+        z-index: 9999;
+        position: fixed;
+        width: 100%;
+    }
+    .navbar-header a img {
+    width: 45px;
+    height: 45px;
+}
+    .navbar-header a{
+   width: 45px;
+    height: 45px;
+        margin: 10px 0 0 20px;
+}
+    .navbar-header{
+        height: 60px;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .menu_btn{
+        padding: 0 20px 0 0;
+        margin: 0;
+        line-height: 60px;
+        height: 60px;
+        font-size: 22px;
+    }
+    nav .row, nav{
+        height: 60px;
+    }
+    nav .container, nav .row {
+    height: 50px;
+}
+    .main{
+        margin-top: 60px;
+        padding-bottom: 20px;
+    }
+    #top_menu{
+        background: #fff;
+        width: 100%;   
+    }
+    .menu li{
+        display: block;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        line-height: 60px;
+        border-bottom: 1px solid #eeeeee;
+        width: 100%;
+    }
+    .menu li a{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+
+} 
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) { 
+
+
+} 
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) { 
+
+
+} 
+
+
+/*========== Mobile First Method ==========*/ 
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) { 
+
+} 
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) { 
+
+} 
+
+/* Small Devices, Tablets */ 
+@media only screen and (min-width : 768px) { 
+
+} 
+
+/* Medium Devices, Desktops */ 
+@media only screen and (min-width : 992px) { 
+
+} 
+
+/* Large Devices, Wide Screens */ 
+@media only screen and (min-width : 1200px) { 
+
+}

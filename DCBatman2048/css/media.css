@@ -1,0 +1,301 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+.menu li{
+    padding: 0 20px;
+}
+.team_item{
+     margin-bottom: 30px;
+    }
+    .team_s{
+        padding-bottom: 0;
+    }
+    .params_s{
+        padding: 30px 0 0 0;
+    }
+    .main_footer{
+        padding: 20px 0;
+    }
+    .menu li
+    {
+        padding: 0 17px;
+        
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+	
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+header{
+        height: 400px;
+    }
+nav{
+		height: 60px;
+		line-height: 60px;
+		background-color: #2a2e48;
+        position: fixed;
+	}
+.logo{
+    padding-top: 15px;
+    }
+.top_line{
+    display: none;
+    }
+.menu_btn{
+        height: 40px;
+        width: 40px;
+        background-color:red;
+        border-radius:50%;
+        color: #fff;
+    }
+#top_menu{
+        background-color: #2e2e48;
+        padding: 20px 0;
+    }
+.title_block h1{
+    font-size: 30px;
+    }
+.title_block p{
+    font-size: 14px;
+    }
+#myForm{
+    width: 100%;
+    }
+.menu li{
+    display: block;
+    text-align: center;
+    }
+.menu li a{
+    display: block;
+    }
+.menu li a:hover{
+    color:#000;
+    background-color: #fff;
+    }
+.title_block{
+    margin-top: 100px;
+    }
+.menu_btn span{
+    top: -16px;
+    }
+.team_item{
+    margin-bottom: 30px;        
+    }
+.team_item>img , .team_item>h4{
+    margin:0 auto;
+    text-align: center;
+    }
+.team_item>span p{
+    padding: 5px 0 0 0;
+    margin: 0;
+    text-align: center;
+    }
+#myForm{
+    width: 100%;
+    }
+/*.call_btn{
+    top: 8px;
+    right: 65px;
+    width: 40px;
+    height: 40px;
+    }*/
+    .call_btn{
+ display: none;
+    }
+    .call_btn2{
+ display: block;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+header{
+    height: 400px;
+    }
+nav{
+    height: 60px;
+    line-height: 60px;
+    background-color: #2a2e48;
+    position: fixed;	
+	}
+.logo{
+    padding-top: 15px;
+    }
+.top_line{
+    display: none;
+    }
+.menu_btn{
+    height: 40px;
+    width: 40px;
+    background-color:red;
+    border-radius:50%;
+    color: #fff;
+    }
+#top_menu{
+    background-color: #2e2e48;
+    padding: 20px 0;
+    }
+.menu li{
+    display: block;
+    text-align: center;
+    }
+.menu li a{
+    display: block;
+    }
+.menu li a:hover{
+    color:#000;
+    background-color: #fff;
+    }
+.title_block{
+    margin-top: 100px;
+    }
+        .title_block h1
+    {font-size: 30px;}
+    .title_block p
+    {
+        font-size: 14px;
+    }
+     .menu_btn span
+    {
+        top: -16px;
+    }
+   .team_item{
+       margin-bottom: 30px;}
+    #myForm{
+        width: 100%;
+    }
+    .call_btn{
+        top: 8px;
+        right: 65px;
+        width: 40px;
+        height: 40px;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	header
+    {
+        height: 400px;
+    }
+    nav{
+		height: 60px;
+		line-height: 60px;
+		background-color: #2a2e48;
+position: fixed;
+		
+	}
+.logo
+    {padding-top: 15px;}
+    .top_line
+    {display: none;}
+
+    .menu_btn
+    {
+        height: 40px;
+        width: 40px;
+        background-color:red;
+        border-radius:50%;
+        color: #fff;
+        
+    }
+    .menu_btn span
+    {
+        top: -16px;
+    }
+    #top_menu
+    {
+        background-color: #2e2e48;
+        padding: 20px 0;
+    }
+    .menu li
+    {
+        display: block;
+        text-align: center;
+    }
+        .menu li a
+    {
+        display: block;
+    }
+           .menu li a:hover
+    {
+        color:#000;
+        background-color: #fff;
+    }
+    .title_block
+    {
+        margin-top: 100px;
+    }
+        .title_block h1
+    {font-size: 30px;}
+    .title_block p
+    {
+        font-size: 14px;
+    }
+        .team_item
+    {margin-bottom: 30px;}
+    #myForm{
+        width: 100%;
+    }
+    .call_btn{
+        top: 8px;
+        right: 65px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
