@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 500px;
+    height: 330px;
+    background: orange;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+.controls {
+    width: 360px;
+    float: left;
+}
+
+.block {
+    width: 600px;
+    float: left;
+}
+
+#out {
+    width: 440px;
+    height: 130px;
+    margin: 20px 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 90px;
+    font-size: 16px;
+    resize: none;
+    background: #fff;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+
+.main-body {
+    width: 960px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 64px;
+}
+
+.description {
+    text-align: center;
+    font-size: 28px;
+}
+
+.controls>p {
+    text-align: center;
+    font-size: 22px;
+}
+
+.controls>p:first-child {
+    margin-bottom: 30px;
+}
+
+input[type=range] {
+    outline: none;
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 8px;
+    height: 7px;
+    border: 1px solid #bdc3c7;
+    background-color: #fff;
+}
+
+.tooltip {
+    width: 160px;
+    text-align: center;
+    background: #1d1f20;
+    color: #fff;
+    border-radius: 6px;
+    padding: 4px 0;
+    margin: 0 auto;
+    margin-top: -10px;
+    position: relative;
+    z-index: 1;
+}
+
+.tooltip-arrow {
+    background: #1d1f20;
+    width: 15px;
+    height: 15px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-top: -30px;
+}
+
+#tooltip-block {
+    display: none;
+}

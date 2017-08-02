@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Document </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main-body">
+        <h1>css3</h1>
+        <p class="description">border-raduis</p>
+        <div class="gen">
+            <div class="controls">
+                <p> Border-radius:
+                    <input type="range" id="r1" value=10>
+                </p>
+                <p> Top left-radius:
+                    <input type="range" id="tlr" value=0>
+                </p>
+                <p>Top right-radius:
+                    <input type="range" id="trr" value=0>
+                </p>
+                <p> Bottom left-radius:
+                    <input type="range" id="blr" value=0>
+                </p>
+                <p> Bottom right-radius:
+                    <input type="range" id="brr" value=0>
+                </p>
+            </div>
+            <div class="block">
+                <div id="main">
+
+                    <textarea id="out" readonly></textarea>
+                    <div id="tooltip-block">
+                        <div class="tooltip">Click on text to copy!</div>
+                        <div class="tooltip-arrow"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
