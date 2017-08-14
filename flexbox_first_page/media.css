@@ -1,0 +1,64 @@
+@media screen and (max-width:960px) {
+    .work-container .work {
+        width: 85%;
+    }
+    .work-container img {
+        max-height: 200px;
+    }
+    .team-container {
+        flex-direction: column;
+    }
+    .team-person {
+        width: 100%;
+    }
+    .person-social {
+        width: 30%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-map,
+    .footer-feedback {
+        width: 100%;
+    }
+    .header-container {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .header-logo {
+        padding: 25px 0 25px 30px;
+        align-self: flex-start;
+    }
+    .menu {
+        width: 70%;
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    .menu li {
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        border-bottom: 2px solid #ccc;
+    }
+    .menu a {
+        padding: 20px;
+        padding: 20px;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    #menu-btn {
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+@media screen and(max-width:px) {}
+
+@media screen and(max-width:px) {}
