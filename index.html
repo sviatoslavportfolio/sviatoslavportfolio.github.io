@@ -11,14 +11,15 @@
         }
         
         .wrap {
-            width: 1200px;
+            width: 85%;
+            max-width: 1600px;
             margin: 30px auto;
             background: #f4f4f4;
             border-radius: 20px;
             box-shadow: 0 10px 6px -6px #777;
             text-align: center;
             padding: 10px 0;
-            display: flex;
+           
         }
         
         ul {
@@ -31,12 +32,12 @@
         li {
             list-style: none;
             text-align: center;
-            width: 200px;
-            padding: 0 20px;
+            width: 21%;
+            padding: 0 10px;
         }
         
         img {
-            width: 200px;
+            max-width: 200px;
             height: 170px;
             border-radius: 20px;
             box-shadow: 0 10px 6px -6px #777;
@@ -45,6 +46,20 @@
         
         img:hover {
             transform: scale(1.08);
+        }
+        @media screen and (max-width:1093px){
+            li{
+                width: 47%;
+                padding: 1.5%;
+               
+            }
+        }
+        @media screen and (max-width:600px){
+            li{
+                width: 96%;
+                padding: 1.5%;
+               
+            }
         }
     </style>
 </head>
@@ -75,6 +90,10 @@
             <li>
                 <a href="landing_driver/index.html"><img src="img/site6.PNG" alt=""></a>
                 <p>HTML + CSS + Bootstrap + JQuery</p>
+            </li>
+            <li>
+                <a href="flexbox_first_page/index.html"><img src="img/site7.PNG" alt=""></a>
+                <p>HTML + CSS (flexbox) + JQuery</p>
             </li>
         </ul>
     </div>
