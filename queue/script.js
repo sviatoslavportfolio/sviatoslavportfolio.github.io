@@ -94,7 +94,3 @@ $(".clear").click(function () { //очистка
     quantity = 0;
 });
 
-
-/*$("[type='number']").keypress(function (evt) {
-    evt.preventDefault(); //отключение клавиатуры
-});*/
