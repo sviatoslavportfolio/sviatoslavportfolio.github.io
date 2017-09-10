@@ -23,7 +23,7 @@ $(function () {
     });
 });
 $(function () {
-    $(".subt_num").click(function () {
+    $(".subt_num").keyup(function () {
         this.max = x.length;
         quantity = this.value;
         $(".index").attr("max", this.max - quantity);
@@ -31,7 +31,7 @@ $(function () {
     });
 });
 $(function () {
-    $(".index").click(function () {
+    $(".index").keyup(function () {
         index = this.value;
         console.log(index);
     });
@@ -95,6 +95,6 @@ $(".clear").click(function () { //очистка
 });
 
 
-$("[type='number']").keypress(function (evt) {
+/*$("[type='number']").keypress(function (evt) {
     evt.preventDefault(); //отключение клавиатуры
-});
+});*/
