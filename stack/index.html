@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Stack</h1>
+    <main>
+        <div class="inputs">
+            <div class="input_one">
+                <textarea name="" class="first_s" id="" cols="1" rows="10"></textarea>
+                <form action="">
+                    <input type="radio" class="first_ctrl" name="dir" value="left"> Left<br>
+                    <input type="radio" class="first_ctrl" name="dir" value="right" checked> Right<br>
+                </form>
+            </div>
+
+            <div class="input_two">
+                <textarea name="" class="second_s" id="" cols="1" rows="10"></textarea>
+                <form action="">
+                    <input type="radio" class="second_ctrl" name="dir" value="left"> Left<br>
+                    <input type="radio" class="second_ctrl" name="dir" value="right" checked> Right<br>
+                </form>
+            </div>
+        </div>
+        <div class="controls">
+                    <form action="">
+            <p><input type="radio" class="add_subt" name="add_subt" value="add" checked>Додавання</p>
+            <p><input type="radio" class="add_subt" name="add_subt" value="subt">Видалення <input type="number" value="" placeholder="0" min="0" class="subt_num"> елементiв</p>
+            
+            <p>З якого iндексу: <input type="number" size="3" name="num" min="0" value="" class="index"></p>
+        </form>
+                        <form action="">
+                    <input type="radio" class="third_ctrl" name="dir" value="left"> Left<br>
+                    <input type="radio" class="third_ctrl" name="dir" value="right" checked> Right<br>
+                </form>
+        
+        </div>
+           <button class="start">START</button>
+            <div class="output">
+                <textarea name="" id="" class="third_s" cols="1" rows="10" disabled></textarea>
+            </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

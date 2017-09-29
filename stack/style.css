@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    width: 640px;
+    position: relative;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+textarea {
+    resize: none;
+    width: 30px;
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80%;
+    height: 250px;
+    max-height: 250px;
+}
+
+.controls {
+    width: 100%;
+}
+
+.output {
+    padding: 20px 0;
+}
+
+.output textarea {
+    display: block;
+    margin: 0 auto;
+    background: white;
+}
+
+.controls form {
+    font-size: 28px;
+    margin: 0 auto;
+    width: 340px;
+}
+
+.start {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 20px;
+    background: lightgreen;
+    border-color: greenyellow;
+    outline: none;
+}
+input[type="number"]{
+    width: 60px;
+    height: 25px;
+    font-size: 20px;
+}
+
