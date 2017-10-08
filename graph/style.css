@@ -1,0 +1,49 @@
+svg {
+    border: 1px solid #000;
+}
+
+.links line {
+    stroke: #777;
+    stroke-opacity: 1;
+    stroke-width: 2px;
+}
+
+.node circle {
+    stroke: #000;
+    stroke-width: 2px;
+
+}
+
+.node text {
+    fill: #000;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 800;
+}
+
+textarea {
+    display: block;
+    font-size: 20px;
+    display: inline-block;
+    background-color: #fff;
+}
+
+.matrix {
+    color: #000;
+}
+
+.btn {
+    padding: 6px 24px;
+    background: lightgreen;
+    outline: none;
+    margin: 10px 0;
+    display: block;
+
+}
+
+.red {
+    background: #ff7a83;
+}
+
+.text-block {
+    display: block;
+}
