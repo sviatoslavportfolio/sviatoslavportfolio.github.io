@@ -1,7 +1,6 @@
 var clk;
 
 function start() { //запуск по кнопке, отрисовка графа библиотекой Д3
-
     var svg = d3.select("svg"),
         width = +svg.attr("width"),
         height = +svg.attr("height");
@@ -20,8 +19,7 @@ function start() { //запуск по кнопке, отрисовка граф
         .attr("class", "links")
         .selectAll("line")
         .data(graph.links)
-        .enter().append("line")
-        .attr("marker-end", "url(#Triangle)");
+        .enter().append("line");
 
     var node = svg.selectAll(".node")
         .data(graph.nodes)

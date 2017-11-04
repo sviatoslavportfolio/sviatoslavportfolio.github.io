@@ -3,6 +3,8 @@ var graph = { //вершины и линии графа
     links: []
 };
 
+var nodeActionClick = "saveNode";
+
 var text = document.querySelector(".text"); //текстовое поле
 var arr; //массив с поля ТЕКСТ
 
@@ -119,6 +121,16 @@ function check_matrix() {
 }
 
 //----------------------------
+//===
+
+var radioCheck = document.querySelectorAll(".radioCheck");
+for (var rad in radioCheck) {
+    radioCheck[rad].onclick = function () {
+        nodeActionClick = this.value;
+        console.log(nodeActionClick);
+    }
+}
+//===
 function deleteNode() { //удаление вершин по клику правой кнопкой
     clk = document.querySelectorAll(".node");
     lineDel = document.querySelectorAll("line");
@@ -127,12 +139,18 @@ function deleteNode() { //удаление вершин по клику прав
         clk[ob].oncontextmenu = function (e) {
             e.preventDefault();
             var nodeNumber = this.lastChild.innerHTML;
-            if (nodeNumber != 1) {
-                findDeleteNodes(nodeNumber);
-                reCountNodes();
+
+            if (nodeActionClick == "delNode") {
+                if (nodeNumber != 1) {
+                    findDeleteNodes(nodeNumber);
+                    reCountNodes();
+                } else {
+                    document.querySelector("svg").innerHTML = " ";
+                }
             } else {
-                document.querySelector("svg").innerHTML = " ";
+                delWithSave(nodeNumber);
             }
+
         }
     }
 
@@ -172,4 +190,61 @@ function deleteNode() { //удаление вершин по клику прав
             }
         }
     }
+
+    function delWithSave(nodeNumber) {
+        var textLinks = "";
+        var sourseArr = [];
+        var parentNode;
+        for (var i = 0; i < graph.links.length; i++) {
+            if (graph.links[i].target.id == nodeNumber) {
+                parentNode = graph.links[i].source.id;
+                parentNodeIndex = graph.links[i].source.index;
+                graph.links.splice(i, 1);
+            }
+        }
+        for (var i = 0; i < graph.links.length; i++) {
+            if (graph.links[i].source.id == nodeNumber) {
+                graph.links[i].source.id = parentNode;
+                graph.links[i].source.index = parentNodeIndex;
+            }
+        }
+        graph.nodes.splice(nodeNumber - 1, 1);
+
+        for (var i = 0; i < graph.links.length; i++) {
+            graph.links[i].target.id = String(i + 1);
+        }
+        for (var i = 0; i < graph.links.length; i++) {
+            if (graph.links[i].source.id != parentNode) {
+                graph.links[i].source.id = String(i + 1);
+            }
+
+        }
+
+        for (var i = 0; i < graph.nodes.length; i++) {
+            graph.nodes[i].id = String(i + 1);
+        }
+
+        function buildText() {
+            for (var i = 0; i < graph.links.length; i++) {
+                sourseArr.push(graph.links[i].source.id);
+            }
+            sourseArr = sourseArr.filter(function (elem, index, self) {
+                return index == self.indexOf(elem) && elem != undefined;
+            })
+            console.log(sourseArr);
+            for(var i=0;i<sourseArr.length;i++){
+                textLinks+=sourseArr[i]+":";
+                for(var j=0;j<graph.links.length;j++){
+                    if(graph.links[j].source.id==sourseArr[i]){
+                        textLinks+=graph.links[j].target.id+",";
+                    }
+                }
+                textLinks=textLinks.slice(0, -1);
+                textLinks+=";\n";
+            }
+            text.innerHTML=textLinks;
+        }
+        buildText();
+    }
+
 };
