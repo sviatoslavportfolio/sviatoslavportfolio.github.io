@@ -1,0 +1,34 @@
+svg {
+    width: 800px;
+    height: 600px;
+    background: #446699;
+    display: block;
+}
+.node text {
+    fill: #000;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 800;
+    z-index: 2;
+    color: #000;
+    display: block;
+}
+.start{
+    display: block;
+    background: lightgreen;
+    padding: 15px 30px;
+}
+.ta{
+    display: inline-block;
+}
+textarea{
+    resize: none;
+    font-size: 14px;
+}
+.guide{
+    border: 1px solid red;
+    width: 680px;
+    padding: 0 10px;
+}
+.guide p{
+    font-size: 18px;
+}

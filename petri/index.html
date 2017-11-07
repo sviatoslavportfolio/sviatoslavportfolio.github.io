@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <svg id="rhs">
+  
+</svg>
+    <div class="ta">
+        <p>Вершины и порты</p>
+        <textarea name="" id="" cols="45" rows="20" class="nodesText">"nodes": [
+    { "id":0, "group": 0, "count": 0 },
+    { "id":1, "group": 0, "count": 1 },
+    { "id":2, "group": 0, "count": 2 },
+    { "id":3, "group": 0, "count": 3 },
+    { "id":4, "group": 0, "count": 4 },
+    { "id":5, "group": 0, "count": 5 },
+
+    { "id":6, "group": 1, "count": 6 },
+    { "id":7, "group": 1, "count": 7 },
+    { "id":8, "group": 1, "count": 8 },
+    { "id":9, "group": 1, "count": 9 }
+  ],</textarea></div>
+
+    <div class="ta">
+        <p>Связи</p>
+        <textarea name="" id="" cols="45" rows="20" class="edgesText">"edges": [
+    { "source": 0, "target": 9 },
+    { "source": 9, "target": 1 },
+    { "source": 1, "target": 6 },
+    { "source": 6, "target": 2 },
+    { "source": 6, "target": 3 },
+    { "source": 2, "target": 8 },
+    { "source": 3, "target": 7 },
+    { "source": 7, "target": 4 },
+    { "source": 4, "target": 8 },
+    { "source": 8, "target": 5 }
+  ]</textarea></div>
+    <button class="start">draw</button>
+    
+    <div class="guide">
+        <h3>Инструкция</h3>
+        <p>id - номер вершины/порта,задаются по порядку, нужны для поля SOURCE</p>
+        <p>group - 0 означает вершину, 1 означает порт</p>
+        <p>count - тестк внутри вершины/порта</p>
+        <p>source - ОТКУДА идет дуга ( используется номер id )</p>
+        <p>target - КУДА идет дуга ( используется номер id )</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="d3.v3.min.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
